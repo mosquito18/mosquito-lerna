@@ -37,5 +37,8 @@
   },
   "scripts": {
     "start": "vite"
+  },
+  "dependencies": {
+    "@mosquito/component": "^0.0.7"
   }
 }

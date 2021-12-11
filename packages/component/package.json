@@ -1,7 +1,7 @@
 {
-  "name": "@mosquito/__PACKAGE_NAME__",
-  "version": "0.0.1",
-  "description": "__PACKAGE_NAME__",
+  "name": "@mosquito/component",
+  "version": "0.0.7",
+  "description": "component",
   "author": "wenjielin <wenjielin@whale.im>",
   "homepage": "",
   "license": "ISC",

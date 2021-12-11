@@ -12,6 +12,7 @@
   "scripts": {
     "start": "lerna run start --parallel",
     "create-package": "node ./scripts/create.js",
-    "build": "lerna run build --parallel"
+    "build": "lerna run build --parallel",
+    "publish": "git add . && git commit -m 'feat[mosquito] publish' && lerna run build --parallel && lerna run pub"
   }
 }
