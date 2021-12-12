@@ -39,6 +39,14 @@
     "start": "vite"
   },
   "dependencies": {
-    "@mosquito/component": "^0.0.7"
+    "@mosquito/component": "^0.0.7",
+    "@types/react-dom": "^17.0.11",
+    "@whale/apollo-client": "^1.0.17",
+    "@whale/assets-modal-viewer": "^2.0.18",
+    "@whale/components-unit": "^1.1.4",
+    "@whale/whale-avatar": "^2.0.7",
+    "@whale/whale-uploader": "3.0.3-6",
+    "graphql": "^16.1.0",
+    "yup": "^0.32.11"
   }
 }

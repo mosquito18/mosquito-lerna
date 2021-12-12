@@ -1,0 +1,5 @@
+{
+  "name": "@whale/whale-uploader",
+  "version": "3.0.3-8",
+  "main": "dist/index.js"
+}
