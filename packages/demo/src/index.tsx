@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import ReactDOM from 'react-dom';
-import MUnitCenter, { B } from '@mosquito/component'
+import { MUnitCenter } from '@mosquito/component'
 // import UnitCenter from '@whale/components-unit';
 import unitCenter from './utils/mock'
 import './index.less';
@@ -16,14 +16,12 @@ interface demoProps {
 const App: React.FC = () => {
   const [state, setState] = useState('🐳')
 
-  const u = new MUnitCenter()
+  MUnitCenter.use((Unit: any) => {
+      Unit.renderer = {};
+  });
 
-  const b = new B()
-  MUnitCenter.desc()
-
-  B.desc()
   // b.say()
-  console.log(unitCenter,'----')
+  console.log(unitCenter,MUnitCenter,'----')
   return (
     <div className={bem()}>
       Hello {state}!
