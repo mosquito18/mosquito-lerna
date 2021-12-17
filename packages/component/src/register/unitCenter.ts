@@ -50,7 +50,7 @@ export default class MUnitCenter {
         fields.forEach(field => {
             if (MUnitCenter.fields[field.field_type]) {
                 const Ctro = MUnitCenter.fields[field.field_type];
-                this.model[field.key] = new Ctro() as FieldClass & OnFieldClassInit;
+                this.model[field.key] = new Ctro(field) as FieldClass & OnFieldClassInit;
             }
         });
     }

@@ -10,3 +10,8 @@ if (process.env.NODE_ENV !== 'production') {
         console.error(' [UnitCenter error]: ' + msg);
     };
 }
+
+
+export const t = (key: string, options?: any): string => {
+    return (globalThis as any)?.WhaleIntl?.t(key, options) || key;
+}
