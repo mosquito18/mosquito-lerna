@@ -1,6 +1,8 @@
 import React, { useState, useCallback } from 'react';
 import ReactDOM from 'react-dom';
 import { MUnitCenter } from '@mosquito/component'
+import Translate from '@mosquito/translate'
+import BabelC from '@mosquito/babelC'
 // import UnitCenter from '@whale/components-unit';
 import unitCenter from './utils/mock'
 import './index.less';
@@ -25,6 +27,8 @@ const App: React.FC = () => {
   return (
     <div className={bem()}>
       Hello {state}!
+      <Translate msg={'tsc'} onClick={()=>console.log('-----tsc-----')} />
+      <BabelC msg={'babel'} onClick={()=>console.log('-----www-----')} />
     </div>
   )
 }
